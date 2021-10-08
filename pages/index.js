@@ -34,7 +34,7 @@ export default function Home({ gemAmount, morAmount, runAmount, petitionData }) 
             <div className={styles.card}>
               <div className={styles.cardInfo}>
                 <h2 className={styles.cardTitle}>GoFundMe page set up by Superyacht Stews pleding to run 100k throughout October:</h2>
-                <p>Several superyacht industry stewardesses have set themselves a goal of running 100k throughout the month of october to help raise funds for Gemma's treatment.</p>
+                <p>Several superyacht industry stewardesses have set themselves a goal of running 100k throughout the month of october to help raise funds for Gemma&apos;s treatment.</p>
                 <p>{runAmount}</p>
                 <a href="https://www.gofundme.com/f/100k-in-october-to-help-gem-beat-cervical-cancer" target="blank" rel='noreferrer' className={styles.link}>Donate</a>
               </div>
