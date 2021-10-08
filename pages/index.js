@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 import * as cheerio from 'cheerio'
@@ -6,6 +7,10 @@ import * as axios from 'axios'
 export default function Home({ gemAmount, morAmount, runAmount, petitionData }) {
     return (
       <div className={styles.container}>
+        <Head>
+          <title>Help Gemma fight cervical cancer</title>
+          <meta name='description' content='Help Gemma raise the funds she needs for immunotherapy treatment for stage 4 cervical cancer' />
+        </Head>
         <main className={styles.main}>
           <div className={styles.intro}>
             <h1 className={styles.title}>Helping Gemma fight cervical cancer</h1>
@@ -13,6 +18,9 @@ export default function Home({ gemAmount, morAmount, runAmount, petitionData }) 
             <p>Gemma is currently having her second round of chemotherapy to treat stage 4 cervical cancer. However if the treatment does not work the only other option for her is immunotherapy which currently is not covered on the NHS for Gemmas cancer. The immunotherapy she would need is £10,000 per treatment and she will need an absolute minimum of 4 treatments and up to 30.</p>
             <p>The caring people in Gemmas life have set up various fundraising pages which are detailed below. Please donate if you can and if you are not able to then please share Gemmas story and this page.</p>
             <p>Thank you</p>
+            <div className={styles.video}>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/MepcNEi6YBg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
           </div>
           <div className={styles.grid}>
             <div className={styles.card}>
@@ -33,7 +41,7 @@ export default function Home({ gemAmount, morAmount, runAmount, petitionData }) 
             </div>
             <div className={styles.card}>
               <div className={styles.cardInfo}>
-                <h2 className={styles.cardTitle}>GoFundMe page set up by Superyacht Stews pleding to run 100k throughout October:</h2>
+                <h2 className={styles.cardTitle}>GoFundMe page set up by Superyacht Stews pledging to run 100k throughout October:</h2>
                 <p>Several superyacht industry stewardesses have set themselves a goal of running 100k throughout the month of october to help raise funds for Gemma&apos;s treatment.</p>
                 <p>{runAmount}</p>
                 <a href="https://www.gofundme.com/f/100k-in-october-to-help-gem-beat-cervical-cancer" target="blank" rel='noreferrer' className={styles.link}>Donate</a>
@@ -42,7 +50,7 @@ export default function Home({ gemAmount, morAmount, runAmount, petitionData }) 
             <div className={styles.card}>
               <div className={styles.cardInfo}>
                 <h2 className={styles.cardTitle}>Petition:</h2>
-                <p>Petition for the UK Government to discuss in parliament for immunotherapy treatment for cervical cancer to be funded by the NHS</p>
+                <p>Petition for the UK Government to discuss in parliament for immunotherapy treatment for cervical cancer to be funded by the NHS.</p>
                 <p>{petitionData.data.attributes.signature_count} signatures</p>
                 <a href="https://petition.parliament.uk/petitions/598472" target="blank" rel='noreferrer' className={styles.link}>Sign</a>
               </div>
