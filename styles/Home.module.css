@@ -119,8 +119,10 @@
     padding: 2rem 0;
     width: 100%;
   }
+  
   .intro {
     width: 95%;
+    margin: 0 auto;
     font-size: .9rem;
     padding: 1rem;
   }
