@@ -15,7 +15,7 @@
   width: 80%;
   margin: 0 auto;
   height: 100%;
-  padding: 5rem 0;
+  padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,24 @@
   justify-content: center;
   color: #777;
   font-family: "Mulish", sans-serif;
+}
+
+.image {
+  width: 90%;
+  height: 10%;
+  margin: 2rem auto;
+  margin-bottom: 0;
+}
+
+.image img {
+  height: 100%;
+}
+
+.caption {
+  font-style: italic;
+  font-weight: 600;
+  opacity: .8;
+  margin-top: 0;
 }
 
 .intro {
@@ -38,7 +56,20 @@
 
 .video {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 315px;
+  margin-top: 3rem;
+}
+
+.video h4 {
+  margin-top: 0rem;
+}
+
+.video iframe {
+  max-width: 600px;
+  width: 80%;
+  height: 100%;
 }
 
 .intro .title {
@@ -100,6 +131,7 @@
 .cardInfo p:last-of-type {
   text-align: center;
   font-weight: 600;
+  font-size: 1rem;
 }
 
 .logo {
@@ -110,6 +142,7 @@
 .link {
   padding: .5rem 1rem;
   width: 95%;
+  max-width: 250px;
   margin: 0 auto;
   background-color: #fff;
   display: flex;
@@ -127,11 +160,19 @@
     padding: 2rem 0;
     width: 100%;
   }
+
+  .caption {
+    font-size: .7rem;
+  }
+
+  .image {
+    margin-top: 1rem;
+  }
   
   .intro {
     width: 95%;
     margin: 0 auto;
-    font-size: .9rem;
+    font-size: .8rem;
     padding: 1rem;
   }
 
@@ -148,6 +189,10 @@
   .card {
     width: 95%;
     margin: 1rem auto;
+  }
+
+  .cardInfo {
+    font-size: .8rem;
   }
 
   .cardDetails {
@@ -168,7 +213,28 @@
   .link {
     height: 100%;
     font-size: .8rem;
-    margin: 0;
+    margin: 0 auto;
     padding: 1rem;
+  }
+}
+
+@media(max-width: 500px) {
+  .video {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .video iframe {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .caption {
+    width: 100%;
+    text-align: left;
+  }
+
+  .video h4 {
+    font-size: .9rem;
   }
 }

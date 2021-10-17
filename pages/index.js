@@ -1,5 +1,7 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import gemPic from '../public/gemma.jpg'
 
 import * as cheerio from 'cheerio'
 import * as axios from 'axios'
@@ -8,18 +10,24 @@ export default function Home({ gemAmount, morAmount, runAmount, petitionData }) 
     return (
       <div className={styles.container}>
         <Head>
-          <title>Help Gemma fight cervical cancer</title>
+          <title>Help save Gemma’s life</title>
           <meta name='description' content='Help Gemma raise the funds she needs for immunotherapy treatment for stage 4 cervical cancer' />
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <main className={styles.main}>
           <div className={styles.intro}>
-            <h1 className={styles.title}>Helping Gemma fight cervical cancer</h1>
-            <p>Various ways to help Gemma get her treatment!</p>
-            <p>Gemma is currently having her second round of chemotherapy to treat stage 4 cervical cancer. However if the treatment does not work the only other option for her is immunotherapy which currently is not covered on the NHS for Gemmas cancer. The immunotherapy she would need is £10,000 per treatment and she will need an absolute minimum of 4 treatments and up to 30.</p>
+            <h1 className={styles.title}>Help save Gemma’s life.</h1>
+            <div className={styles.image}>
+              <Image src={gemPic} alt="Gemma over the past year" layout='intrinsic' />
+              <p className={styles.caption}>Always smiling</p>
+            </div>
+            <p>Super Yacht Stewardess Gemma has just been told that the NHS can no longer help her as the chemo is not working. She will remain in hospital until she is able to raise enough funds to start private treatments.</p>
+            <p>Gem wants to remind everyone to please encourage the women in your life to get regular Pap smears. She showed no signs of cervical cancer before her bi-annual exam. This agressive cancer has now spread to her liver, muscles around her spine and brain.</p>
             <p>The caring people in Gemmas life have set up various fundraising pages which are detailed below. Please donate if you can and if you are not able to then please share Gemmas story and this page.</p>
-            <p>Thank you</p>
+            <p>Thank you.</p>
             <div className={styles.video}>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/MepcNEi6YBg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <h4>Gemma being presented the Senior Crew award at this years A Crew awards in Barcelona.</h4>
+              <iframe src="https://www.youtube.com/embed/sluc1FLz9R4?start=5257" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
           </div>
           <div className={styles.grid}>
