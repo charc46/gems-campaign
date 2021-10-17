@@ -18,7 +18,7 @@ export default function Home({ gemAmount, morAmount, runAmount, petitionData }) 
           <div className={styles.intro}>
             <h1 className={styles.title}>Help save Gemma’s life.</h1>
             <div className={styles.image}>
-              <Image src={gemPic} alt="Gemma over the past year" layout='intrinsic' />
+              <Image src={gemPic} alt="Gemma over the past year" layout='responsive' />
               <p className={styles.caption}>Always smiling</p>
             </div>
             <p>Super Yacht Stewardess Gemma has just been told that the NHS can no longer help her as the chemo is not working. She will remain in hospital until she is able to raise enough funds to start private treatments.</p>
