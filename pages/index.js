@@ -23,12 +23,12 @@ export default function Home({ gemAmount, morAmount, runAmount, petitionData }) 
             <Image src={gemPic} alt="Gemma, my angel" layout='responsive' />
           </div>
           <p>It is with a broken heart that we share with you that after 20 months of fighting cervical cancer Gemma passed away peacefully on Thursday 21st October 2021.</p>
-          <p>The cancer was spreading aggressively and had gone to her brain. Chemo was stopped as it wasn’t working and we were told the NHS couldn’t do anything else for her. </p>
-          <p>Private Immunotherapy was still an option but Gemma had been poorly and had to strengthen up again to face the treatment….unfortunately she couldn’t find the strength to fight anymore.</p>
+          <p>The cancer was spreading aggressively and had gone to her brain. Chemo was stopped as it wasn&apos;t working and we were told the NHS couldn&apos;t do anything else for her. </p>
+          <p>Private Immunotherapy was still an option but Gemma had been poorly and had to strengthen up again to face the treatment….unfortunately she couldn&apos;t find the strength to fight anymore.</p>
           <p>We would like to thank everyone from the bottom of our hearts who donated to help give Gemma the chance to have the Immunotherapy treatment.</p>
-          <p>We will be updating again in a few weeks when we have laid Gemma to rest about how we will use the funds raised in Gemma’s memory.</p>
-          <h2>Celebrating Gemma's life</h2>
-          <p>Gemma’s ‘Celebration of Life’ will be held on Wednesday 3rd November</p>
+          <p>We will be updating again in a few weeks when we have laid Gemma to rest about how we will use the funds raised in Gemma&apos;s memory.</p>
+          <h2>Celebrating Gemma&apos;s life</h2>
+          <p>Gemma&apos;s <em>Celebration of Life</em> will be held on Wednesday 3rd November</p>
           <div className={styles.serviceDetails}>
             <p>Service: 13:00 UK time</p>
             <address>
@@ -48,7 +48,7 @@ export default function Home({ gemAmount, morAmount, runAmount, petitionData }) 
           </div>
           <p><strong>Please send Floral Tributes to Green Acres.</strong></p>
 
-          <p>The service will be livestreamed for those who can't make it in person.</p>
+          <p>The service will be livestreamed for those who can&apos;t make it in person.</p>
           <p>LiveStream Link & Password: </p>
           <a href="https://watch.obitus.com" target='blank' rel='noreferrer' className={styles.serviceLink}>https://watch.obitus.com</a>
           <div className={styles.streamDetails}>
