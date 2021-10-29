@@ -11,21 +11,52 @@ export default function Home({ gemAmount, morAmount, runAmount, petitionData }) 
   return (
     <div className={styles.container}>
       <Head>
-        <title>Help save Gemma’s life</title>
+        <title>Do it for Gem</title>
         <meta name='description' content='Help Gemma raise the funds she needs for immunotherapy treatment for stage 4 cervical cancer' />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main className={styles.main}>
         <div className={styles.intro}>
-          <h1 className={styles.title}>Help save Gemma’s life.</h1>
+          <h1 className={styles.title}>Gemma Willis</h1>
+          <h2 className={styles.subtitle}>17/11/1990 - 21/10/2021</h2>
           <div className={styles.image}>
-            <Image src={gemPic} alt="Gemma over the past year" layout='responsive' />
-            <p className={styles.caption}>Always smiling</p>
+            <Image src={gemPic} alt="Gemma, my angel" layout='responsive' />
           </div>
-          <p>Super Yacht Stewardess Gemma has just been told that the NHS can no longer help her as the chemo is not working. She will remain in hospital until she is able to raise enough funds to start private treatments.</p>
-          <p>Gem wants to remind everyone to please encourage the women in your life to get regular Pap smears. She showed no signs of cervical cancer before her bi-annual exam. This agressive cancer has now spread to her liver, muscles around her spine and brain.</p>
-          <p>The caring people in Gemmas life have set up various fundraising pages which are detailed below. Please donate if you can and if you are not able to then please share Gemmas story and this page.</p>
-          <p>Thank you.</p>
+          <p>It is with a broken heart that we share with you that after 20 months of fighting cervical cancer Gemma passed away peacefully on Thursday 21st October 2021.</p>
+          <p>The cancer was spreading aggressively and had gone to her brain. Chemo was stopped as it wasn’t working and we were told the NHS couldn’t do anything else for her. </p>
+          <p>Private Immunotherapy was still an option but Gemma had been poorly and had to strengthen up again to face the treatment….unfortunately she couldn’t find the strength to fight anymore.</p>
+          <p>We would like to thank everyone from the bottom of our hearts who donated to help give Gemma the chance to have the Immunotherapy treatment.</p>
+          <p>We will be updating again in a few weeks when we have laid Gemma to rest about how we will use the funds raised in Gemma’s memory.</p>
+          <h2>Celebrating Gemma's life</h2>
+          <p>Gemma’s ‘Celebration of Life’ will be held on Wednesday 3rd November</p>
+          <div className={styles.serviceDetails}>
+            <p>Service: 13:00 UK time</p>
+            <address>
+              GreenAcres Epping Forest, Kiln Road,<br/>
+              North Weald, Epping,<br/>
+              Essex, CM16 6AD
+            </address>
+          </div>
+          <br/>
+          <div className={styles.serviceDetails}>
+            <p>Wake: 14:30</p>
+            <address>
+              The Top Oak,<br/>
+              Oakhill Rd, Stapleford Abbotts,<br/>
+              Essex, RM4 1JL
+            </address>
+          </div>
+          <p><strong>Please send Floral Tributes to Green Acres.</strong></p>
+
+          <p>The service will be livestreamed for those who can't make it in person.</p>
+          <p>LiveStream Link & Password: </p>
+          <a href="https://watch.obitus.com" target='blank' rel='noreferrer' className={styles.serviceLink}>https://watch.obitus.com</a>
+          <div className={styles.streamDetails}>
+            <p>Username: losi3812</p>
+            <p>Password: 560062</p>
+          </div>
+
+          <p><strong>Please keep signing and sharing the petition to get immunotherapy for cervical cancer funded by the NHS.</strong></p>
           <div className={styles.video}>
             <h4>Gemma being presented the Senior Crew award at this years A Crew awards in Barcelona.</h4>
             <iframe src="https://www.youtube.com/embed/sluc1FLz9R4?start=5257" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

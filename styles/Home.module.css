@@ -26,7 +26,7 @@
 }
 
 .image {
-  width: 90%;
+  width: 70%;
   height: 10%;
   margin: 2rem auto;
   margin-bottom: 0;
@@ -54,6 +54,19 @@
   background-color: #fff;
 }
 
+.serviceDetails p {
+  margin-bottom: .2rem;
+  font-weight: 600;
+}
+
+.serviceLink {
+  text-decoration: underline;
+}
+
+.streamDetails p {
+  margin: .5rem 0;
+}
+
 .video {
   display: flex;
   flex-direction: column;
@@ -73,9 +86,15 @@
 }
 
 .intro .title {
-  margin: 0;
+  margin: 0 auto;
   font-size: 3rem;
   font-weight: 400;
+}
+
+.subtitle {
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 200;
 }
 
 .grid {
@@ -167,6 +186,7 @@
 
   .image {
     margin-top: 1rem;
+    width: 90%;
   }
   
   .intro {
@@ -179,6 +199,10 @@
   .intro .title {
     font-size: 1.5rem;
     font-weight: 500;
+  }
+
+  .subtitle {
+    font-size: 1rem;
   }
 
   .grid {
